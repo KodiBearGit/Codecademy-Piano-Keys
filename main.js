@@ -11,16 +11,17 @@ const keyPlay = function(key) {
 }
 
 const keyReturn = function(key) {
-  key. target.style.backgroundcolor = "";
+  key.target.style.backgroundcolor = "";
 }
 
 // Write a named function with event handler properties
 const noteHandler = function(note) {
-
+  note.onmousedown = keyPlay;
+  note.onmouseup = keyReturn;
 }
 
-// Write a loop that runs the array elements through the function
-
+// Write a loop that runs the array elements through the function  empty function so {} get ommitted
+notes.forEach(noteHandler(note));
 
 // These variables store the buttons that progress the user through the lyrics
 let nextOne = document.getElementById('first-next-line');
