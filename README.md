@@ -29,7 +29,7 @@ List of features
 * interactive site to help beginner-level piano students study
 
 ## Status
-Project is: in progress
+Project is: complete
 
 ## Inspiration
 Codecademy Project under Building Interactive Websites with JavaScript
