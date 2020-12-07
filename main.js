@@ -6,8 +6,12 @@ keys.forEach(function(key){
 })
 
 // Write named functions that change the color of the keys below
-const keyPlay = function(keyPress) {
-  keyPress.target.style.backgroundcolor = "blue";
+const keyPlay = function(keyDown) {
+  keyDown.target.style.backgroundcolor = "blue";
+}
+
+const keyReturn = function(keyUp) {
+  keyUp. target.style.backgroundcolor = "";
 }
 
 // Write a named function with event handler properties
