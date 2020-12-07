@@ -5,13 +5,13 @@ keys.forEach(function(key){
   notes.push(document.getElementById(key));
 })
 
-// Write named functions that change the color of the keys below
+// Write named functions that change the color of the keys below  missed the camelcase for CSS style till testing
 const keyPlay = function(key) {
-  key.target.style.backgroundcolor = "blue";
+  key.target.style.backgroundColor = "blue";
 }
 
 const keyReturn = function(key) {
-  key.target.style.backgroundcolor = "";
+  key.target.style.backgroundColor = "";
 }
 
 // Write a named function with event handler properties
@@ -21,7 +21,7 @@ const noteHandler = function(note) {
 }
 
 // Write a loop that runs the array elements through the function  empty function so {} get ommitted
-notes.forEach(noteHandler(note));
+notes.forEach(noteHandler);
 
 // These variables store the buttons that progress the user through the lyrics
 let nextOne = document.getElementById('first-next-line');
